@@ -58,35 +58,3 @@ fun ProductsGrid( products: Products, startProductActivity: (ProductItem) -> Uni
             )
         }
     }
-
-fun setProductCategory(category: String) {
-
-}
-//fun ProductsGrid(products: Products, startProductActivity: (ProductItem) -> Unit) {
-//    LazyVerticalGrid(
-//        cells = GridCells.Fixed(count = 2),
-//        contentPadding = PaddingValues(16.dp),
-//        verticalArrangement = Arrangement.spacedBy(8.dp),
-//        horizontalArrangement = Arrangement.spacedBy(8.dp),
-//    ) {
-//        items(
-//            items = products.items,
-//            itemContent = { productItem: ProductItem ->
-//                Column(
-//                    modifier = Modifier.fillMaxWidth(),
-//                    horizontalAlignment = Alignment.CenterHorizontally
-//                ) {
-//                    Image(
-//                        painter = painterResource(id = productItem.image),
-//                        contentDescription = productItem.title,
-//                        contentScale = ContentScale.Crop,
-//                        modifier = Modifier.clickable {
-//                            startProductActivity(productItem)
-//                        }
-//                    )
-//                    Text(text = productItem.title)
-//                }
-//            }
-//        )
-//    }
-//}
