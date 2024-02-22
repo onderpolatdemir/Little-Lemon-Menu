@@ -26,7 +26,6 @@ import androidx.compose.ui.unit.dp
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun ProductsGrid( products: Products, startProductActivity: (ProductItem) -> Unit) {
-    Text(text = "${products.items.size}")
         LazyVerticalGrid(
             cells = GridCells.Fixed(count = 2),
             contentPadding = PaddingValues(16.dp),
